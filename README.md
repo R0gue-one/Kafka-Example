@@ -27,10 +27,11 @@ A basic app in Python/Flask that get weather update from [weatherapi.com](https:
   
 + If you want to update manually run producer.py
 
-+ Rn I have set api_url (in app.py and producer.py) for ease of use (will be removing it in 2,3 days)
++ Rn I have set api_url (in [app.py](/app.py) and [producer.py](/producer.py) for ease of use (will be removing it in 2,3 days)
 
 ## Additional 
-+ You can also check if events are being written to the topic by running the follwing on terminal
++ You can also check if events are being written to the topic by running the following on terminal
 ```
 bin/kafka-console-consumer.sh --topic weather-topic --from-beginning --bootstrap-server localhost:9092
 ```
+
