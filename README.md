@@ -3,6 +3,8 @@ A basic app in Python/Flask that get weather update from [weatherapi.com](https:
 ![Screenshot from 2024-09-12 13-37-58](https://github.com/user-attachments/assets/ed097c51-5478-401d-b898-32d3e783326f)
 
 # Getting started
+- [Install Kafka](https://kafka.apache.org/downloads)
+- Clone the repo
 ## Setup Kafka
 [Full tutorial](https://kafka.apache.org/quickstart)
 
@@ -26,3 +28,9 @@ A basic app in Python/Flask that get weather update from [weatherapi.com](https:
 + If you want to update manually run producer.py
 
 + Rn I have set api_url (in app.py and producer.py) for ease of use (will be removing it in 2,3 days)
+
+## Additional 
++ You can also check if events are being written to the topic by running the follwing on terminal
+```
+bin/kafka-console-consumer.sh --topic weather-topic --from-beginning --bootstrap-server localhost:9092
+```
