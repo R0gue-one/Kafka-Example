@@ -15,7 +15,8 @@ def delivery_report(err, msg):
         print(f"Message delivered to {msg.topic()} [{msg.partition()}]")
 
 # Fetch data from Weather API
-api_url = "Enter Your API call url here from weatherapi.com"
+
+api_url = "http://api.weatherapi.com/v1/current.json?key=212ca36a7c8e46b9acb85443241209&q=London&aqi=yes"
 response = requests.get(api_url)
 weather_data = response.json()
 
