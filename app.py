@@ -23,12 +23,11 @@ consumer = Consumer(**conf_consumer)
 consumer.subscribe(['weather-topic'])
 
 producer = Producer(**conf_producer)
-
 def produce_weather_data():
     while True:
         try:
             # Fetch data from Weather API
-            api_url = 'http://api.weatherapi.com/v1/current.json?key=95c4a38f95c547a9b3a93205241109&q=London&aqi=yes'
+            api_url = "Enter Your API call url here from weatherapi.com"
             response = requests.get(api_url)
             weather_data = response.json()
 
